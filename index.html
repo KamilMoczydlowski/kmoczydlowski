@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kamil Moczydlowski">
-    <meta name="description" content="">
+    <meta name="description" content="I'm Kamil Moczydlowski, a front-end beginner with aspirations and ambitions to create solid websites and web applications">
     <meta name="keywords"
         content="kamil, moczydlowski, kamil moczydlowski, kamil moczydłowski ,portfolio, frontend, front-end, developer">
-    <meta description="">
 
     <!-- Icon to title -->
 
@@ -43,7 +42,7 @@
     </ul>
 </div>
 
-<button class="burger-btn hamburger hamburger--slider" type="button">
+<button class="burger-btn hamburger hamburger--slider" type="button" aria-label="mobile menu">
     <span class="hamburger-box">
         <span class="hamburger-inner"></span>
     </span>
@@ -61,7 +60,7 @@
         </ul>
     </div>
 </nav>
-        
+
         <div class="header__content">
             <div class="header__wrapper wrapper">
                 <div class="header__content-box">
@@ -80,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <button class="header__button">
+        <button class="header__button" aria-label="lead to first section">
             <a href="#about">
                 <p class="header__button-text">Let's go!</p>
                 <i class="fa-solid fa-chevron-down"></i>
@@ -137,7 +136,7 @@
                             <h3 class="projects__text-title">Shop prototype</h3>
                             <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Reiciendis, soluta?</p>
-                            <button class="projects__text-button">Checkout!</button>
+                            <button class="projects__text-button" aria-label="Watch shop prototype"><a href="shop.html">Checkout!</a></button>
                         </div>
                     </div>
                     <div class="projects__card projects__card-two">
@@ -147,7 +146,7 @@
                             <h3 class="projects__text-title">Workout app</h3>
                             <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Officiis, laudantium.</p>
-                            <button class="projects__text-button">Checkout!</button>
+                            <button class="projects__text-button" aria-label="Watch workout app"><a href="workout.html">Checkout!</a></button>
                         </div>
                     </div>
                     <div class="projects__card projects__card-three">
@@ -157,7 +156,7 @@
                             <h3 class="projects__text-title">ToDo List</h3>
                             <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Sint, iusto.</p>
-                            <button class="projects__text-button">Checkout!</button>
+                            <button class="projects__text-button" aria-label="Watch ToDo list"><a href="todo.html">Checkout!</a></button>
                         </div>
                     </div>
                 </div>
@@ -176,8 +175,9 @@
                     <p>It will be a pleasure to create one for you.</p>
                     <p>Interested? I can't wait to hear your ideas! <span class="contact__text-highlight">Click
                             button</span> below and let's start working together!</p>
-                    <button class="contact__button contact__button--animation" title="Don't need to hesitate!">
-                        <a href="">Hire me!</a>
+                    <button class="contact__button" title="Don't need to hesitate!" aria-label="contact me">
+                        <div class="contact__button-shadow"></div>
+                        <a href="mailto:info@kmoczydlowski.pl" title="email" target="_blank" rel="noopener noreferrer">Hire me!</a>
                     </button>
 
                     <div class="contact__carousel">
@@ -258,13 +258,13 @@
     <div class="container">
         <div class="social-media-wrapper wrapper">
             <div class="social-media-links">
-                <a href="" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/kamil-moczyd%C5%82owski-748954237/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="" title="Twitter">
+                <a href="https://twitter.com/k_moczydlowski" title="Twitter" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-twitter-square"></i>
                 </a>
-                <a href="" title="GitHub">
+                <a href="https://github.com/KamilMoczydlowski" title="GitHub" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
