@@ -38,9 +38,9 @@
 
     <div class="nav__mobile-container">
     <ul class="nav__mobile-items">
-        <li class="nav__mobile-item"><a href="index.html#about">About me</a></li>
-        <li class="nav__mobile-item"><a href="index.html#projects">Projects</a></li>
-        <li class="nav__mobile-item"><a href="index.html#contact">Contact</a></li>
+        <li class="nav__mobile-item"><a href="index.html#about" rel="noopener">About me</a></li>
+        <li class="nav__mobile-item"><a href="index.html#projects" rel="noopener">Projects</a></li>
+        <li class="nav__mobile-item"><a href="index.html#contact" rel="noopener">Contact</a></li>
     </ul>
 </div>
 
@@ -54,11 +54,11 @@
 
         <nav class="header__nav-box">
     <div class="header__nav-wrapper wrapper">
-        <a href="index.html" class="header__logo">Kamil Moczydlowski</a>
+        <a href="index.html" rel="noopener" class="header__logo">Kamil Moczydlowski</a>
         <ul class="header__nav-desktop">
-            <li class="header__nav-desktop-items"><a href="#about">About me</a></li>
-            <li class="header__nav-desktop-items"><a href="#projects">Projects</a></li>
-            <li class="header__nav-desktop-items"><a href="#contact">Contact</a></li>
+            <li class="header__nav-desktop-items"><a href="#about" rel="noopener">About me</a></li>
+            <li class="header__nav-desktop-items"><a href="#projects" rel="noopener">Projects</a></li>
+            <li class="header__nav-desktop-items"><a href="#contact" rel="noopener">Contact</a></li>
         </ul>
     </div>
 </nav>
@@ -68,7 +68,7 @@
                 <div class="header__content-box">
                     <div class="header__content-title">
                         <p>Hello there, I'm </p>
-                        <h1 class="my-name">Kamil Moczydlowski</h1>
+                        <h1 class="my-name">Kamil Moczydłowski</h1>
                     </div>
                     <div class="header__content-text">
                         <p class="header__content-highlight">Front-end Developer</p>
@@ -82,7 +82,7 @@
             </div>
         </div>
         <button class="header__button" aria-label="lead to first section">
-            <a href="#about">
+            <a href="#about rel="noopener"">
                 <p class="header__button-text">Let's go!</p>
                 <i class="fa-solid fa-chevron-down"></i>
             </a>
@@ -94,9 +94,11 @@
             <div class="wrapper">
                 <h2 class="about__title section__title">About me</h2>
                 <div class="about__content">
-                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi ab sint
-                        sit. Mollitia incidunt repudiandae animi tempora dolor excepturi sapiente dolores ut voluptatum
-                        soluta, reiciendis totam eligendi nisi inventore?</p>
+                    <div class="about__content-textbox">
+                        <p class="about__text">I'm logistician who is trying to make huge change in his life by learning front-end. In my previous jobs I was updating data in database, working as international salesman or as a driver and I feel that it's good time to try something new.</p>
+                        <p class="about__text">I'm learning by myself taking online courses on udemy.com (Maximilian Schwarzmuller), teachable.com (Mateusz Maj - Majek) and codecademy.com. Currently I'm on my way to learn my first framework - React.</p>
+                        <p class="about__text">I'm focused, determined and ready to start my first job as junior developer. I can't wait to code websites for You!</p>
+                    </div>
                     <img class="about__img" src="./dist/img/computer.PNG" alt="Memoji of boy working on computer">
                 </div>
                 <h3 class="about__skills-title">What I've learned</h3>
@@ -135,22 +137,22 @@
                         <div class="projects__img projects__img-one">
                         </div>
                         <div class="projects__text projects__text-one">
-                            <h3 class="projects__text-title">Shop prototype</h3>
+                            <h3 class="projects__text-title">Workout app</h3>
                             <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Reiciendis, soluta?</p>
                             <button class="projects__text-button" aria-label="Watch shop prototype"><a
-                                    href="shop.html">Checkout!</a></button>
+                                    href="shop.html" rel="noopener">Checkout!</a></button>
                         </div>
                     </div>
                     <div class="projects__card projects__card-two">
                         <div class="projects__img projects__img-two">
                         </div>
                         <div class="projects__text projects__text-two">
-                            <h3 class="projects__text-title">Workout app</h3>
+                            <h3 class="projects__text-title">Shop prototype</h3>
                             <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Officiis, laudantium.</p>
                             <button class="projects__text-button" aria-label="Watch workout app"><a
-                                    href="workout.html">Checkout!</a></button>
+                                    href="workout.html" rel="noopener">Checkout!</a></button>
                         </div>
                     </div>
                     <div class="projects__card projects__card-three">
@@ -161,7 +163,7 @@
                             <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Sint, iusto.</p>
                             <button class="projects__text-button" aria-label="Watch ToDo list"><a
-                                    href="todo.html">Checkout!</a></button>
+                                    href="todo.html" rel="noopener">Checkout!</a></button>
                         </div>
                     </div>
                 </div>
@@ -182,7 +184,7 @@
                         wait to hear your ideas! <span class="contact__text-highlight">Click
                             button</span> below and let's start working together!</p>
                     <button class="contact__button" aria-label="contact me">
-                        <div class="contact__button-shadow"></div>
+                        <div class="contact__button-shadow contact__button-shadow--animation"></div>
                         <a href="mailto:info@kmoczydlowski.pl" title="Don't need to hesitate! Send me a message." target="_blank"
                             rel="noopener noreferrer">Hire me!</a>
                     </button>
@@ -264,7 +266,7 @@
         </section>
     </main>
 
-    <div class="container">
+    <div class="social-container">
         <div class="social-media-wrapper wrapper">
             <div class="social-media-links">
                 <a href="https://www.linkedin.com/in/kamil-moczyd%C5%82owski-748954237/" title="LinkedIn"
@@ -279,8 +281,7 @@
                 </a>
             </div>
             <div class="email-link">
-                <a href="mailto:info@kmoczydlowski.pl" title="email" target="_blank" rel="noopener noreferrer"><i
-                        class="ti ti-mail"></i> info@kmoczydlowski.com</a>
+                <a href="mailto:info@kmoczydlowski.pl" title="email" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i> info@kmoczydlowski.com</a>
             </div>
         </div>
     </div>
@@ -289,7 +290,7 @@
     <div class="wrapper">
         <div class="footer__text">
             <p>Made with <img class="footer__icon" src="./dist/img/brain.png" alt="Icon of brain"> by Kamil
-                Moczydlowski</p>
+                Moczydłowski</p>
         </div>
     </div>
 </footer>
