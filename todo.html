@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kamil.M">
-    <meta name="keywords" content="">
-    <meta description="">
+    <meta name="description" content="'ToDo' list with ability to add, edit or delete tasks">
 
     <!-- Icon to title -->
 
@@ -37,13 +36,30 @@
     <div class="container">
         <div class="wrapper header-wrapper">
             <div class="header-box">
-                <a href="index.html" class="take-me-home"><i class="fa-solid fa-house-chimney"></i></a>
+                <a href="index.html#projects" class="take-me-home"><i class="fa-solid fa-house-chimney"></i></a>
                 <div class="title-box">
                     <h1 class="title">ToDo List</h1>
                 </div>
                 <div class="text-input-box">
-                    <input class="text-input input" type="text" placeholder="What do you want to do?"><button
-                        class="add-item-btn"><i class="fa-solid fa-plus"></i></button>
+                    <input class="text-input input" type="text" placeholder="What do you want to do?">
+                    <button class="add-btn add-item-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="choose-category-box">
+                    <div class="category-list">
+                        <label for="category-select" class="category-text">Choose category...</label>
+                        <select name="categories" id="category-select" class="category-select">
+                            <option value="reminders" class="category-option">Reminders</option>
+                            <option value="private" class="category-option">Private</option>
+                            <option value="work" class="category-option">Work</option>
+                            <option value="shopping list" class="category-option">Shopping list</option>
+                        </select>
+                    </div>
+                    <div class="add-category-box">
+                        <p class="category-text">...or add new one</p>
+                        <button class="add-new-category-btn"><i class="fa-solid fa-plus"></i><p>Add new</p></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,15 +80,23 @@
                 </template>
             </div>
         </div>
-
     </div>
-    <div class="edit-popup">
+    <div class="add-category-popup" >
+        <h3 class="add-category-title">Create your own category:</h3>
+            <input class="category-input input" type="text" placeholder="Write your category">
+            <p class="category-error-msg error-msg"></p>
+            <div class="category-buttons">
+                <button class="category-button category-button-accept">Accept</button>
+                <button class="category-button category-button-cancel">Cancel</button>
+            </div>
+    </div>
+    <div class="edit-task-popup">
         <h3 class="edit-title">Edit your task:</h3>
-        <p class="edit-error-msg"></p>
         <input type="text" class="edit-input input" placeholder="Edit a task">
+        <p class="edit-error-msg error-msg"></p>
         <div class="edit-buttons">
-            <button class="editing-button button-accept">Accept</button>
-            <button class="editing-button button-cancel">Cancel</button>
+            <button class="editing-button edit-button-accept">Accept</button>
+            <button class="editing-button edit-button-cancel">Cancel</button>
         </div>
     </div>
 
