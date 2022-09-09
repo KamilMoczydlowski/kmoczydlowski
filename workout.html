@@ -38,8 +38,18 @@
                     send you back to main page</li>
                 <li class="help-info">on weather bar, click on the city to change it</li>
                 <li class="help-info">Exercises are split on each day</li>
-                <li class="help-info">Click Day # button to see list of exercises</li>
-                <li class="help-info">Click 'Start exercises' button to show the results</li>
+                <li class="help-info">Click Day # accordion-button to see list of exercises</li>
+                <li class="help-info">Click 'Start exercises' button to begin workout</li>
+                <li class="help-info">'Save new results' button will update your old score with new records</li>
+                <li class="help-info">'Reset new results' button will reset your new records</li>
+                <li class="help-info">'Cancel' button will close the table</li>
+            </ul>
+            <h4 class="help-subtitle">Stoper:</h4>
+            <ul class="help-list">
+                <li class="help-info"><i class="fa-solid fa-play"></i> - start stoper</li>
+                <li class="help-info"><i class="fa-solid fa-pause"></i> - pause stoper</li>
+                <li class="help-info"><i class="fa-solid fa-stop"></i> - stop counting and reset stoper</li>
+                <li class="help-info"><i class="fa-solid fa-floppy-disk"></i> - save exercise's result</li>
             </ul>
         </div>
     </div>
@@ -115,9 +125,9 @@
                                 <li class="acc-list-item">15 crunches</li>
                             </ul>
                             <ul class="daily-time">
-                                <li class="daily-time-list-item">00:01.0</li>
-                                <li class="daily-time-list-item">00:02.0</li>
-                                <li class="daily-time-list-item">00:03.0</li>
+                                <li class="daily-time-list-item">00:00.0</li>
+                                <li class="daily-time-list-item">00:00.0</li>
+                                <li class="daily-time-list-item">00:00.0</li>
                             </ul>
                         </div>
                         <button class="start-exercises-btn"><a href="#stoper">Start exercises</a></button>
@@ -153,10 +163,10 @@
                         <button class="stoper-btn stoper-stop"><i class="fa-solid fa-stop"></i></button>
                         <button class="stoper-btn stoper-save"><i class="fa-solid fa-floppy-disk"></i></button>
                     </div>
-                    <p class="stoper-err"></p>
                     <div class="8ball-quote">
                         <p class="quote-text"></p>
                     </div>
+                    <p class="stoper-err"></p>
                 </div>
                 <div class="your-score">
                     <h3 class="title-score" id="score">Your results</h3>
