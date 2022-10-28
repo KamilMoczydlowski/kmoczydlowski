@@ -1,0 +1,63 @@
+@import 'maincolors';
+
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header {
+    height: 0;
+}
+
+.main404 {
+
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    &__img {
+        max-width: 300px;
+        width: 70%;
+        height: auto;
+    }
+
+    &__title {
+        margin: 0 auto 1em;
+        color: $text-highlight2;
+        font-size: 5rem;
+        border-bottom: thick double $text-highlight2;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:active,
+    &__link:visited {
+        color: $text-highlight2;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
