@@ -278,13 +278,14 @@ body::-webkit-scrollbar-thumb {
 			width: 12rem;
 			text-align: center;
 
-			.fa-brands {
+			&-icon,
+			&-iconspinning {
 				margin-bottom: 0.1em;
 				font-size: 5rem;
 				color: $text-highlight2;
 			}
 
-			.fa-react {
+			&-iconspinning {
 				animation: reactrotate 7s linear infinite;
 			}
 
@@ -387,23 +388,23 @@ body::-webkit-scrollbar-thumb {
 			}
 
 			&-one {
-				background-image: url('../img/react-food-app.png');
+				background-image: url('../img/react-food-app.webp');
 			}
 
 			&-two {
-				background-image: url('../img/green-shop.png');
+				background-image: url('../img/green-shop.webp');
 			}
 
 			&-three {
-				background-image: url('../img/react-todo.png');
+				background-image: url('../img/react-todo.webp');
 			}
 
 			&-four {
-				background-image: url('../img/todo-img.png');
+				background-image: url('../img/todo-img.webp');
 			}
 
 			&-five {
-				background-image: url('../img/workout.png');
+				background-image: url('../img/workout.webp');
 			}
 
 			&--rotate {
@@ -801,15 +802,15 @@ body::-webkit-scrollbar-thumb {
 			}
 
 			&__skill {
-				.learned-skill {
+				&-icon {
 					transition: transform 0.3s;
 				}
 
-				.learned-skill:hover {
+				&-icon:hover {
 					transform: scale(1.2);
 				}
 
-				.fa-react:hover {
+				&-iconspinning:hover {
 					animation-duration: 3s;
 				}
 			}
@@ -854,14 +855,9 @@ body::-webkit-scrollbar-thumb {
 				}
 			}
 
-			// &__card:hover {
-			// 	transform: scale(1.1);
-			// }
-
 			&__card:hover .projects__text {
 				opacity: 1;
 				transform: rotateY(0deg) translateZ(100px);
-				// transform: translateZ(100px);
 				box-shadow: 10px 10px 20px $text2;
 				z-index: 1;
 			}
@@ -869,7 +865,6 @@ body::-webkit-scrollbar-thumb {
 			&__card:hover .projects__img {
 				opacity: 0;
 				transform: rotateY(180deg) translateZ(0px);
-				// transform: translateZ(0px);
 				z-index: 0;
 			}
 
@@ -897,7 +892,6 @@ body::-webkit-scrollbar-thumb {
 				height: auto;
 				width: 30rem;
 				transform: rotate(90deg) translateZ(200px);
-				// transform: translateZ(200px);
 				z-index: 2;
 			}
 
