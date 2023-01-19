@@ -777,7 +777,7 @@ body::-webkit-scrollbar-thumb {
 
 		&__img {
 			display: inline-block;
-			border: 1px solid black;
+			// border: 1px solid black;
 		}
 
 		&__button:hover {
@@ -796,9 +796,7 @@ body::-webkit-scrollbar-thumb {
 
 			&__img {
 				display: block;
-				width: 45%;
-				height: fit-content;
-				border: 1px solid black;
+				max-height: 35rem;
 			}
 
 			&__skill {
