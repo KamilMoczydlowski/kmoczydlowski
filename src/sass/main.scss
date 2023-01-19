@@ -116,10 +116,6 @@ body::-webkit-scrollbar-thumb {
 	transform: translateZ(400px);
 	z-index: 4;
 
-	// &__wrapper {
-	// 	display: flex;
-	// }
-
 	&__logo {
 		text-decoration: none;
 		color: $text3;
@@ -132,15 +128,10 @@ body::-webkit-scrollbar-thumb {
 	}
 }
 
-// .nav-box {
-// 	position: fixed;
-// 		transform: translateZ(400px);
-// 	z-index: 4;
-// }
-
 .header {
 	position: relative;
 	height: 100vh;
+	min-height: 568px;
 	width: 100%;
 	background-image: url('../../dist/img/header-background.svg'); // background by SVGBackgrounds.com
 	background-size: cover;
@@ -701,12 +692,6 @@ body::-webkit-scrollbar-thumb {
 		height: 1.3rem;
 		width: 1.3rem;
 	}
-}
-
-@media (min-width: 768px) {
-	// :root {
-	//     font-size: 70%;
-	// }
 }
 
 @media (min-width: 992px) {
