@@ -330,10 +330,6 @@ body::-webkit-scrollbar-thumb {
 			max-height: calc(300px * 1.4);
 			border-radius: 20px;
 			transition: transform 0.8s;
-
-			// &--shaking {
-			//     animation: shakingcard .8s;
-			// }
 		}
 
 		&__icon-button {
@@ -401,7 +397,6 @@ body::-webkit-scrollbar-thumb {
 			&--rotate {
 				opacity: 0;
 				transform: rotateY(180deg) translateZ(0px);
-				// transform: translateZ(0px);
 				z-index: 0;
 			}
 		}
@@ -431,7 +426,6 @@ body::-webkit-scrollbar-thumb {
 			);
 			transform: rotateY(-180deg) translateZ(0px);
 			transition: transform 0.8s, opacity 0.8s, box-shadow 0.8s;
-			// transform: translateZ(0px);
 			z-index: 0;
 
 			&-title {
@@ -482,6 +476,19 @@ body::-webkit-scrollbar-thumb {
 				a:visited {
 					text-decoration: none;
 					color: $text3;
+				}
+
+				&--disabled {
+					margin-top: 1.5em;
+					padding: 0.7em;
+					font-size: 2rem;
+					background-color: $text3;
+					border: 2px solid $text3;
+					border-radius: 15px;
+					box-shadow: 0 0 10px $text3;
+					transition: transform 0.3s, box-shadow 0.3s;
+					cursor: default;
+					overflow: hidden;
 				}
 			}
 
